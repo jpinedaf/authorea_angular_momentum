@@ -1,6 +1,6 @@
+Abstract1.tex
 Introduction.tex
 Another_path_to_address_this__.tex
-Abstract1.tex
 section_Data_HH211_cite_Tanner_2010__.tex
 Results.tex
 figures/Dist_j_Radius_NH3/Dist_j_Radius_NH3.png

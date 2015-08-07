@@ -2,7 +2,7 @@ Abstract.tex
 Introduction.tex
 Another_path_to_address_this__.tex
 section_Data_HH211_cite_Tanner_2010__.tex
-section_Results_We_fit_the__.tex
+Results.tex
 figures/Dist_j_Radius_NH3/Dist_j_Radius_NH3.png
 Fit-powerlaw.tex
 Discussion.tex

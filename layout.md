@@ -5,4 +5,4 @@ section_Data_HH211_cite_Tanner_2010__.tex
 section_Results_We_fit_the__.tex
 figures/Dist_j_Radius_NH3/Dist_j_Radius_NH3.png
 We_fit_a_power_law__.tex
-section_Discussion_radius_within_which__.tex
+Discussion.tex

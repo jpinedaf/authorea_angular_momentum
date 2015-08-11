@@ -1,7 +1,7 @@
 Abstract1.tex
 Introduction.tex
 Another_path_to_address_this__.tex
-section_Data_HH211_cite_Tanner_2010__.tex
+section_Data_Describe_VLA_data__.tex
 Results.tex
 figures/Dist_j_Radius_NH3/Dist_j_Radius_NH3.png
 figures/Dist_j_Radius_NH3/Figure_and_caption.tex

@@ -3,6 +3,7 @@ Introduction.tex
 Another_path_to_address_this__.tex
 section_Data_Describe_VLA_data__.tex
 Results.tex
+subsection_Calculation_of_specific_angular__.tex
 figures/Dist_j_Radius_NH3/Dist_j_Radius_NH3.png
 figures/Dist_j_Radius_NH3/Figure_and_caption.tex
 Fit-powerlaw.tex

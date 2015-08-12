@@ -1,0 +1,23 @@
+\section{Appendix}
+Determination of the Total angular momentum ($J$) and specific angular momentum ($J/M$) in the case of differential rotation and/or a radial density profile.
+
+Here, we will assume that the density is spherically symmetric and that it can be described 
+by a single power-law depending only on the distance to the central protostar:
+\begin{equation}
+\rho = \rho_0 r^{-p}~. \label{eq:density}
+\end{equation}
+Naturally, the total enclosed mass can be described as 
+\begin{equation}
+M(<R) = \frac{4\pi}{(3-p)} R^{3-p}~<
+\end{equation}
+for $p\ne 3$.
+
+Also, we will assume that the specific angular momentum can be described in spherical coordinates as as
+\begin{equation}
+j(r,\theta) = j_0 ( r \cos \theta)^q~.
+\end{equation}
+Therefore, the total angular momentum within a radius $R$ is
+\begin{eqnarray}
+J(R) &=& \int_{Volume} j(r,\theta) \rho(r) d\Omega r^2 dr \\
+&=& \int_0^{2\pi}\int_{-\pi/2}^{\pi/2}\int_0^R j_0 ( r \cos \theta)^q\, \rho_0 r^{-p}\, r^2 dr 
+\end{eqnarray}

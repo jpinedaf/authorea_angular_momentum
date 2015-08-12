@@ -3,8 +3,8 @@ Determination of the Total angular momentum ($J$) and specific angular momentum 
 
 Here, we will assume that the density is spherically symmetric and that it can be described 
 by a single power-law depending only on the distance to the central protostar:
-\begin{equation}
-\rho = \rho_0 r^{-p}~. \label{eq:density}
+\begin{equation}%\label{eq:density}
+\rho = \rho_0 r^{-p}~.
 \end{equation}
 Naturally, the total enclosed mass can be described as 
 \begin{equation}
@@ -34,11 +34,12 @@ Therefore, the total specific angular momentum can be written as
 \end{equation}
 
 
-%\begin{eqnarray}
-%\int \sin^{p+1} x dx &=& (2^{(-p-3)} \sin^{(p+2)} x (2^{(p+3)} x \cos(x) _2F_1(1, (p+3)/2, (p+4)/2, \sin^2(x))-\sqrt{(pi)} (p+2) \Gamma(p+2) \sin(x) _3 F^~_2(1, (p+3)/2, (p+3)/2;(p+4)/2, (p+5)/2;sin^2(x))))/(p+2)+constant \\
-%\int_{-\pi/2}^{\pi/2} \cos^q x dx &=&  
+\begin{eqnarray}
+\int \sin^{p+1} x dx &=& -\cos{x} _2F_1(1/2, -p/2, 3/2, \cos^2(x)) \sin^p(x) \sin^2(x)^(-p/2)\\
+\int_{0}^{\pi} \sin^{p+1} x dx &=&  
 %-( \csc(\pi/2) \cos^{(p+1)} \left(\pi/2\right) _2F_1(1/2, (p+1)/2, (p+3)/2, 0))/(p+1)
 %+( \csc(-\pi/2) \cos^{(p+1)} \left(-\pi/2\right) _2F_1(1/2, (p+1)/2, (p+3)/2, 0))/(p+1)
-%\end{eqnarray}
+\end{eqnarray}
+  
   
   

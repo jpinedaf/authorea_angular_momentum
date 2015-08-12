@@ -14,30 +14,31 @@ for $p\ne 3$.
 
 Also, we will assume that the specific angular momentum can be described in spherical coordinates as as
 \begin{equation}
-j(r,\theta) = j_0 ( r \cos \theta)^q~,
+j(r,\theta) = j_0 ( r \sin \theta)^q~,
 \end{equation}
 where $q=2$ represents solid body rotation.
 %
 The total angular momentum within a radius $R$ is
 \begin{eqnarray}
 J(R) &=& \int_{Volume} j(r,\theta) \rho(r) d\Omega r^2 dr \\
-&=& \int_0^{2\pi}\int_{-\pi/2}^{\pi/2}\int_0^R j_0 ( r \cos \theta)^q\, \rho_0 r^{-p}\, r^2 dr d\theta d\phi\\
-&=& 2\pi \int_{-\pi/2}^{\pi/2} \cos^q \theta d\theta \int_0^R \rho_0 j_0 r^{2+q-p} \,dr \nonumber \\
-&=& \frac{2\pi}{(3+q-p)}\rho_0 j_0 R^{(3+q-p)} \int_{-\pi/2}^{\pi/2} \cos^q \theta d\theta~,
+&=& \int_0^{2\pi}\int_{0}^{\pi}\int_0^R j_0 ( r \sin \theta)^q\, \rho_0 r^{-p}\, \sin\theta r^2 dr d\theta d\phi\\
+&=& 2\pi \int_{0}^{\pi} \sin^{q+1} \theta d\theta \int_0^R \rho_0 j_0 r^{2+q-p} \,dr \nonumber \\
+&=& \frac{2\pi}{(3+q-p)}\rho_0 j_0 R^{(3+q-p)} \int_{0}^{\pi} \sin^{q+1} \theta d\theta~,
 \end{eqnarray}
 for $(p-q)\ne 3$.
 
 Therefore, the total specific angular momentum can be written as
 \begin{equation}
 \frac{J}{M}(R) = \frac{(3-p)}{2(3+q-p)} j_0 R^{q} 
-\int_{-\pi/2}^{\pi/2} \cos^q \theta d\theta~.
+\int_{0}^{\pi} \sin^{q+1} \theta d\theta~.
 \end{equation}
 
 
-\begin{eqnarray}
-\int \cos^p x dx &=& -(\sqrt(\sin^2(x)) \csc(x) \cos^{(p+1)} x _2F_1(1/2, (p+1)/2, (p+3)/2, \cos^2(x)))/(p+1)+constant \\
-\int_{-\pi/2}^{\pi/2} \cos^q x dx &=&  
--(\sqrt(\sin^2(\pi/2)) \csc(\pi/2) \cos^{(p+1)} \left(\pi/2\right) x _2F_1(1/2, (p+1)/2, (p+3)/2, \cos^2(\pi/2)))/(p+1)
-+(\sqrt(\sin^2(-\pi/2)) \csc(-\pi/2) \cos^{(p+1)} \left(-\pi/2\right) _2F_1(1/2, (p+1)/2, (p+3)/2, \cos^2(-\pi/2)))/(p+1)
-\end{eqnarray}
+%\begin{eqnarray}
+%\int \sin^{p+1} x dx &=& (2^{(-p-3)} \sin^{(p+2)} x (2^{(p+3)} x \cos(x) _2F_1(1, (p+3)/2, (p+4)/2, \sin^2(x))-\sqrt{(pi)} (p+2) \Gamma(p+2) \sin(x) _3 F^~_2(1, (p+3)/2, (p+3)/2;(p+4)/2, (p+5)/2;sin^2(x))))/(p+2)+constant \\
+%\int_{-\pi/2}^{\pi/2} \cos^q x dx &=&  
+%-( \csc(\pi/2) \cos^{(p+1)} \left(\pi/2\right) _2F_1(1/2, (p+1)/2, (p+3)/2, 0))/(p+1)
+%+( \csc(-\pi/2) \cos^{(p+1)} \left(-\pi/2\right) _2F_1(1/2, (p+1)/2, (p+3)/2, 0))/(p+1)
+%\end{eqnarray}
+  
   

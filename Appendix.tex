@@ -27,21 +27,24 @@ J(R) &=& \int_{Volume} j(r,\theta) \rho(r) d\Omega r^2 dr \\
 \end{eqnarray}
 for $(p-q)\ne 3$.
 
-Therefore, the total specific angular momentum can be written as
+The total specific angular momentum can be written as
 \begin{equation}
 \frac{J}{M}(R) = \frac{(3-p)}{2(3+q-p)} j_0 R^{q} 
 \int_{0}^{\pi} \sin^{q+1} \theta d\theta~.
 \end{equation}
 
-
+The defined integral can be written as 
 \begin{eqnarray}
 \int \sin^{p+1} x dx &=& -\cos{x} ~_2F_1(1/2, -p/2, 3/2, \cos^2(x)) \sin^p(x) \sin^2(x)^{(-p/2)}\\
 \int_{0}^{\pi} \sin^{p+1} x dx &=&  2 ~_2F_1(1/2, -p/2, 3/2, 1)
 %-( \csc(\pi/2) \cos^{(p+1)} \left(\pi/2\right) _2F_1(1/2, (p+1)/2, (p+3)/2, 0))/(p+1)
 %+( \csc(-\pi/2) \cos^{(p+1)} \left(-\pi/2\right) _2F_1(1/2, (p+1)/2, (p+3)/2, 0))/(p+1)
 \end{eqnarray}
-  
-  
-  
-  
-  
+where 
+$_2F_1(a, b, c, x)$ is the hypergeometric function.
+
+Therefore, 
+\begin{equation}
+\frac{J}{M}(R) = \frac{(3-p)}{(3+q-p)} j_0 R^{q} 
+_2F_1(1/2, -p/2, 3/2, 1) ~.
+\end{equation}

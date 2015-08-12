@@ -8,17 +8,27 @@ by a single power-law depending only on the distance to the central protostar:
 \end{equation}
 Naturally, the total enclosed mass can be described as 
 \begin{equation}
-M(<R) = \frac{4\pi}{(3-p)} R^{3-p}~,
+M(<R) = \frac{4\pi}{(3-p)} \rho_0 R^{3-p}~,
 \end{equation}
 for $p\ne 3$.
 
 Also, we will assume that the specific angular momentum can be described in spherical coordinates as as
 \begin{equation}
-j(r,\theta) = j_0 ( r \cos \theta)^q~.
+j(r,\theta) = j_0 ( r \cos \theta)^q~,
 \end{equation}
-Therefore, the total angular momentum within a radius $R$ is
+where $q=2$ represents solid body rotation.
+%
+The total angular momentum within a radius $R$ is
 \begin{eqnarray}
 J(R) &=& \int_{Volume} j(r,\theta) \rho(r) d\Omega r^2 dr \\
-&=& \int_0^{2\pi}\int_{-\pi/2}^{\pi/2}\int_0^R j_0 ( r \cos \theta)^q\, \rho_0 r^{-p}\, r^2 dr 
+&=& \int_0^{2\pi}\int_{-\pi/2}^{\pi/2}\int_0^R j_0 ( r \cos \theta)^q\, \rho_0 r^{-p}\, r^2 dr d\theta d\phi\\
+&=& 2\pi \int_{-\pi/2}^{\pi/2} \cos^q \theta d\theta \int_0^R \rho_0 j_0 r^{2+q-p} \,dr \nonumber \\
+&=& \frac{2\pi}{(3+q-p)}\rho_0 j_0 R^{(3+q-p)} \int_{-\pi/2}^{\pi/2} \cos^q \theta d\theta~,
 \end{eqnarray}
-  
+for $(p-q)\ne 3$.
+
+Therefore, the total specific angular momentum can be written as
+\begin{equation}
+\frac{J}{M} = \frac{2\pi}{(3+q-p)}\rho_0 j_0 R^{(3+q-p)} \int_{-\pi/2}^{\pi/2} \cos^q \theta d\theta 
+\frac{(3-p)}{4\pi} \rho_0^{-1} R^{p-3}
+\end{equation}

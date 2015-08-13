@@ -49,4 +49,32 @@ Therefore,
 _2F_1(1/2, -p/2, 3/2, 1) ~.
 \end{equation}
 
-  
+The rotational energy is calculated as,
+\begin{eqnarray}
+E_{rot}(R) &=& \int \frac{1}{2} v_{rot} (r,\theta)^2 \rho(r) dV \\
+&=& \pi \int \left(j_0 (r \sin \theta)^{q-1}\right)^2 \rho_0 r^{-p} \sin\theta r^2 dr d\theta \nonumber\\
+&=& \pi  \int j_0^2 (r \sin \theta)^{2q-2} \rho_0 r^{2-p} \sin\theta dr d\theta  \nonumber\\
+&=& \pi \rho_0  j_0^2 
+\int_0^R  r ^{2q-p}  dr 
+\int_0^\pi  \sin^{2q-1} \theta  d\theta  \nonumber\\
+&=& 
+\frac{\pi \rho_0  j_0^2 }{(2q-p+1)} R^{2q-p+1}
+\int_0^\pi  \sin^{2q-1} \theta  d\theta   \nonumber\\
+&=& 
+\frac{2\pi \rho_0  j_0^2 }{(2q-p+1)} R^{2q-p+1}
+{}_2F_1(1/2, 1-q, 3/2, 1) \\
+&=& 
+\frac{(3-p)}{(2q-p+1)} \frac{M R^{2(q-1)}  j_0^2 }{2}
+{}_2F_1(1/2, 1-q, 3/2, 1)
+\end{eqnarray}
+
+The total gravitational energy is 
+\begin{eqnarray}
+U &=& -\frac{(4\pi\rho_0)^2 G}{(3-p)(5-2p)} R^{5-2p}\\
+&=& -\frac{(3-p)}{(5-2p)}\frac{G M^2}{R}
+\end{eqnarray}
+
+The ratio of the rotational energy is
+\begin{eqnarray}
+\beta &=& \frac{(3-p)(5-p)}{(2q-p+1)(8\pi \rho_0)G} j_0^2 R^{2q+p-4} {}_2F_1(1/2, 1-q, 3/2, 1)
+\end{eqnarray}

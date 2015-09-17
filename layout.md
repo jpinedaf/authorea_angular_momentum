@@ -8,7 +8,6 @@ figures/IRAS03282_w11_Vlsr/IRAS03282_w11_Vlsr.png
 figures/L1451-mm_w11_Vlsr/L1451-mm_w11_Vlsr.png
 subsection_Calculation_of_specific_angular__.tex
 figures/Dist_j_Radius_NH3/Summary_j_radius.png
-figures/Dist_j_Radius_NH3/Figure_and_caption.tex
 Fit-powerlaw.tex
 Discussion.tex
 Summary_Conclusions.tex

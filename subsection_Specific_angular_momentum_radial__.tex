@@ -1,10 +1,29 @@
 \subsection{Specific angular momentum radial profile}
-The specific angular momentum at a distance $r$, is defined as $j(r)=r \times V_{rel}$, 
-where $V_{rel}$ is the relative velocity of the gas with respect to the center of mass. 
-In the case of a protostellar core, the center of mass is well approximated by the position of 
-the YSO. 
+The specific angular momentum at a distance $r$, is defined as $j(r)=r \times \delta v$, 
+where $\delta_V$ is the relative velocity of the gas with respect to the center of mass. 
 %
-The specific angular momentum is calculated as follow.
-We know the position of the protostar or first core candidate (see Table\ref{table:obs}) and this 
-defines the center of the system.
-We measure the centroid velocity obtained from the NH$_3$ fit at the YSO position. 
+In the case of symmetry around an axis, then the specific angular momentum can be described as, 
+$j(r) = R_{rot} V_{rot}$, 
+where $R_{rot}$ is the rotation radius in cylindrical coordinates (also called impact parameter) and 
+$V_{rot}$ is the rotational velocity around its axis of symmetry.
+Therefore, if we determine the rotational velocity at a given rotation radius we can 
+derive the specific angular momentum. 
+In the case of lines that are not very optically thick the rotational velocity will correspond to the 
+relative centroid velocity along the line-of-sight of the line ($V_{LSR}$) with 
+respect of the core center \citep{Tanner_2010}. 
+A similar approach has been used to determine the velocity profile in disks \citep{Murillo_2013,2014A&A...566A..74L,Harsono_2014,Harsono_2015}.
+%
+In the case of a protostellar core, we use the known YSO position and outflow orientation (see Table\ref{table:obs}) 
+to calculate the rotation radius.
+The YSO central velocity is estimated as the velocity of the dense gas, as probed using NH$_3$, 
+at the position of the YSO.
+However, since we are not modeling the more complex dynamics involved in close to the disk scale, then 
+we discard all determinations of the specific angular momentum at distances smaller than the beam major axis.
+
+Since the specific angular momentum should be close to constant for a given rotational radius, 
+we obtain the average the value the specific angular momentum at different rotation radii bins.
+The results are shown in Fig.~\ref{Fig:summary}, with the radial profiles for all three sources, 
+which appear almost indistinguishable.
+The radial profiles display a distribution consistent with a power-law. 
+As a comparison, we also show the profile for a core with solid body rotation down to $5,000$\,au, 
+and conserved specfic angular momentum within that radius using a dash lines \citep{Belloche_2013}. 

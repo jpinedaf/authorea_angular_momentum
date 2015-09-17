@@ -2,11 +2,16 @@
 
 \subsection{Line fit}
 We fit the NH$_3$ (1,1) line with all the hyperfine components using the \verb+pyspeckit+ package \cite{2011ascl.soft09001G}. 
-This implements the NH$_3$ hyperfine structure fit describe in \cite{Rosolowsky_2008} within \verb+python+.
-This method minimizes the difference between the observed profile and a synthetic NH$_3$ line profile 
+This implements the NH$_3$ hyperfine structure fit described in \cite{Rosolowsky_2008} within \verb+python+.
+This method minimizes the difference between the observed and a synthetic NH$_3$ line profile 
 that is parametrized by the line centroid velocity ($V_{lsr}$), velocity dispersion ($\sigma_v$), 
 kinetic temperature ($T_{kin}$), excitation temperature ($T_{ex}$), and column density ($N_{NH_3}$).
+In this case we fix the kinetic temperature to 12~K, and therefore the derived column densities are not 
+well constrained. 
+However, this does not affect this analysis since it only relays on the kinematic properties of the gas 
+which are well constrained.
 
-For these source we fit the NH$_3$ (1,1) line towards all positions with a peak brightness larger than
-5 times the line-free rms. 
-The results are shown in Figure~\ref{Fig1:HH211}, \ref{Fig1:IRAS} and \ref{Fig1:L1451}.
+For these three sources we fit the NH$_3$ (1,1) line towards all positions with a peak brightness larger than
+5$\times$ rms. 
+The results are shown in Figure~\ref{Fig1:HH211}, \ref{Fig1:IRAS} and \ref{Fig1:L1451}, where we 
+present the integrated intensity and centroid velocity maps.

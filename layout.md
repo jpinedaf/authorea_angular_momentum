@@ -5,7 +5,7 @@ section_Data_Describe_VLA_data__.tex
 Results.tex
 figures/IC348_Vlsr_snr5.0_v1/HH211_w11_Vlsr.png
 subsection_Calculation_of_specific_angular__.tex
-figures/Dist_j_Radius_NH3/Dist_j_Radius_NH3.png
+figures/Dist_j_Radius_NH3/Summary_j_radius.png
 figures/Dist_j_Radius_NH3/Figure_and_caption.tex
 Fit-powerlaw.tex
 Discussion.tex

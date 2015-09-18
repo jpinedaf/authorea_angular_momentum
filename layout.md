@@ -6,6 +6,7 @@ Results.tex
 figures/HH211_w11_Vlsr/HH211_w11_Vlsr.png
 figures/IRAS03282_w11_Vlsr/IRAS03282_w11_Vlsr.png
 figures/L1451-mm_w11_Vlsr/L1451-mm_w11_Vlsr.png
+In_the_case_of_source__.tex
 subsection_Specific_angular_momentum_radial__.tex
 figures/Dist_j_Radius_NH3/Summary_j_radius.png
 Fit-powerlaw.tex

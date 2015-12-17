@@ -67,16 +67,98 @@ we find a disk radius of 80\,au.
 This radius is already comparable to 
 
 \subsection{The effect on numerical simulations}
-A few questions while I am running some test simulations:
+We have carried out a set of 3D turbulent hydrodynamical collapse simulations
+with different initial rotation speed and turbulence power spectrum,
+as to probe the underlying physics of the above profile
+of specific angular momentum in star-froming cores.
+We find that turbulence do help to reproduce a 1.7-1.8 power law for
+specific angular momentum, as long as turbulence in the scale of interest
+(500-20000~AU) has not yet been disspiated. We also find the a faster
+rotating core tends to better match the observed profile.
 
-1) Can the power law index be reproduced by conditions other than turbulence cascade.
-  e.g. changing different rotation profiles and evolve the core for a free-fall time before the protostar. 
-  
-2) If turbulence is required (under the condition that the most extreme rotation profile cannot reach this 1.7 power law), then what strength and power spectrum of turbulence is needed.
+We initialize an isolated prestellar cloud core with total mass
+$M_c=8 M_{\sun}$, and radius $R_c=4.0 \times 10^{17}$~cm
+$\approx 2.67 \times 10^4$~AU. This corresponds to a initial mass density
+$\rho_0=5.97 \times 10^{-20}$~g~cm$^{-3}$ and a number density for molecular
+hydrogen $n({\rm H}_2) \approx 10^4$~cm$^{-3}$ (assuming a mean molecular
+weight $\mu=2.36$). The free-fall time of the core is thus
+$t_{\rm ff} \approx 8.6 \times 10^{12}$~s$\approx 0.27 \times 10^6$~Myr.
+We assume an isothermal equation of state for the envelope gas, with
+sound speed $c_s=0.2$~km~s$^{-1}$ and $T \sim 10$~K. We also impose different
+solid-body rotation speed initially, as $\omega_0=2.5 \times 10^{-14}$,
+$5.0 \times 10^{-14}$, and $1.0 \times 10^{-13}$; which correspoinds to
+a ratio of rotational to gravitational energy
+$\beta_{\rm rot}={R_c^3 \omega_0^2 \over 3 G M_c} = 0.0125$, $0.05$, and
+$0.2$.
 
-3) Does magnetic field play a role in shaping the 1.7 power law?
-  One effect is that: magnetic braking will redistribute the angular momentum of infalling gas.
-  However, it is just redistribute from equatorial plane into envelope, so can this still give the same index $q$ for $\theta$ direction?
+For such isolated cloud core, the profile of specific angular momentum
+changes over time, yet turbulence can help to keep the profile
+closer to the 1.7 power law at few 100~AU to 10$^4$~AU scale.
+The stronger and longer the turbulence,
+the better the reproduction of the 1.7 power law.
+
+We disentangle the mass distribution from the angular momentum
+profile.
+\begin{equation}
+\label{Eq:vRprof}
+v(R)=\sqrt{G M(<R) \over R}=\left[{ 4 \pi G \rho_0 \over 3-p}\right]^{1 \over 2
+} R^{1-{p \over 2}}
+\end{equation}
+for a distribution of mass $p<3$, and $p=3$ is the case for point mass source.
+Therefore, $j(R) \propto R^{2-{p \over 2}}$. Note that the equation
+assumes that the collapse is slow and gas are stabilized in the
+current orbit.
+
+\noindent $\bullet$ Laminar case (no turbulence).\\
+When the initial solid body rotation still dominates the largely uniform core,
+the specific angular momentum profile roughly follows a $R^2$ power law.
+As collapse continues, the density profile gradually reaches
+that of a Bonnor-Ebert sphere, in which $\rho \propto R^{-2}$
+in the bulk of core's outer part.
+Hence, the specific angular momentum in the outer part flattens to
+a 1.0 power law, consistent with Eq.~\ref{Eq:vRprof} above. In the same
+time, inner part of the core (inside few 100~AU) follows a power law of
+$j$ steeper than 2.0, which is caused by fast collapse of high angular momentum
+materials that do not have enough time to adjust their fast
+rotational velocity to the current orbit. Large amount of angular
+momentum piles up at few 100~AU but not yet transported into few 10~AU scale,
+therefore profile of $j$ steepens. Overall, the laminar case is hard
+to reproduce the 1.7 power law between
+10$^2$~AU-10$^4$~AU during most of its evolution.
+
+\noindent $\bullet$ Larson's $n=-4$ versus flat $n=0$ turbulence spectrum.\\
+Because we only initialize the turbulence at $t=0$ and no driving
+is done afterwards in this isolated core, turbulence is quickly
+washed out by global collapse in few 10$^3$ to 10$^4$ years. However, typical
+dense cores are embedded in ambient turbulent cloud that replenishes
+both the mass and turbulence in these cores.
+Therefore, we investigate two the turbulence power spectra in k space
+with index $n=-4$ (Larson's law) and $n=0$, to allow different lifetime
+of turbulence; particularly the $n=0$ profile puts more amplitude in
+small scale turbulence than the $n=-4$ profile, which can somewhat
+extend the lifetime of turbulence in small scales.
+
+In both turbulence cases, the profile of specific angular momentum
+is able to sustain a power law between 1.7-1.8 for few 10$^3$ to 10$^4$ years
+in the scale of interest (500-20000~AU), though in the end they
+converge to the laminar case with much flatter profile ($\rightarrow$ 1.0)
+after most turbulence energy is washed out by gravity.
+However, we do find that the $n=0$ turbulence spectrum can sustain the
+observed profile longer than the $n=-4$ case by $\sim$3 times
+(3~kyr versus 10~kyr). Because the turbulence in $n=-4$ case dissipates
+early in the prestellar phase, while that in the $n=0$ case is
+able to last until formation of a flattened structure.
+We infer that, in the presence of turbulence driving or continous supply
+of turbulence from larger cloud, the 1.7-1.8 power law can presumably be
+reproduced even after formation of protostar.
+
+From Fig.~\ref{Fig:AMcomp}, we can also see that the magnitude of
+specific angular momentum from simulations is few times lower than
+that of the observed curve. This indicates that the initial core needs
+to rotate a few times faster than the fastest model investigated here
+($\beta=0.2$). Hence, the observed sources should have $\beta>0.2$, which
+lies in the upper end of $\beta$ estimated by \citep{Goodman+1993}.
+
 
   
 

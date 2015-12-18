@@ -12,5 +12,6 @@ figures/Dist_j_Radius_NH3/Summary_j_radius.png
 Fit-powerlaw.tex
 Discussion.tex
 figures/noturb-fast/noturb-fast.png
+figures/Lars1-fast/Lars1-fast.png
 Summary_Conclusions.tex
 Appendix.tex

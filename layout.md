@@ -14,5 +14,6 @@ Discussion.tex
 figures/noturb-fast/noturb-fast.png
 figures/Lars1-fast/Lars1-fast.png
 figures/mach1-fast/mach1-fast.png
+figures/compJRot/compJRot.png
 Summary_Conclusions.tex
 Appendix.tex

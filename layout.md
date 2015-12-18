@@ -11,5 +11,6 @@ subsection_Specific_angular_momentum_radial__.tex
 figures/Dist_j_Radius_NH3/Summary_j_radius.png
 Fit-powerlaw.tex
 Discussion.tex
+figures/noturb-fast/noturb-fast.png
 Summary_Conclusions.tex
 Appendix.tex

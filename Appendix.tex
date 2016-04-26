@@ -36,15 +36,14 @@ The total specific angular momentum can be written as
 The defined integral can be written as 
 \begin{eqnarray}
 \int \sin^{p+1} x dx &=& -\cos{x} ~_2F_1(1/2, -p/2, 3/2, \cos^2(x)) \sin^p(x) \sin^2(x)^{(-p/2)}\\
-&&\int_{0}^{\pi} \sin^{p+1} x dx &=&  2 ~_2F_1(1/2, -p/2, 3/2, 1)
+\int_{0}^{\pi} \sin^{p+1} x dx &=&  2 ~_2F_1(1/2, -p/2, 3/2, 1)
 \end{eqnarray}
 where 
 $_2F_1(a, b, c, x)$ is the hypergeometric function.
 
 Therefore, 
 \begin{equation}
-\frac{J}{M}(R) = \frac{(3-p)}{(3+q-p)} j_0 R^{q} ~~
-_2F_1(1/2, -p/2, 3/2, 1) ~.
+\frac{J}{M}(R) = \frac{(3-p)}{(3+q-p)} j_0 R^{q} {}_2F_1(1/2, -p/2, 3/2, 1) ~.
 \end{equation}
 
 The rotational energy is calculated as,
@@ -52,18 +51,12 @@ The rotational energy is calculated as,
 E_{rot}(R) &=& \int \frac{1}{2} v_{rot} (r,\theta)^2 \rho(r) dV \\
 &=& \pi \int \left(j_0 (r \sin \theta)^{q-1}\right)^2 \rho_0 r^{-p} \sin\theta r^2 dr d\theta \nonumber\\
 &=& \pi  \int j_0^2 (r \sin \theta)^{2q-2} \rho_0 r^{2-p} \sin\theta dr d\theta  \nonumber\\
-&=& \pi \rho_0  j_0^2 
-\int_0^R  r ^{2q-p}  dr 
-\int_0^\pi  \sin^{2q-1} \theta  d\theta  \nonumber\\
+&=& \pi \rho_0  j_0^2  \int_0^R  r ^{2q-p}  dr  \int_0^\pi  \sin^{2q-1} \theta  d\theta  \nonumber\\
 &=& 
 \frac{\pi \rho_0  j_0^2 }{(2q-p+1)} R^{2q-p+1}
 \int_0^\pi  \sin^{2q-1} \theta  d\theta   \nonumber\\
-&=& 
-\frac{2\pi \rho_0  j_0^2 }{(2q-p+1)} R^{2q-p+1}
-{}_2F_1(1/2, 1-q, 3/2, 1) \\
-&=& 
-\frac{(3-p)}{(2q-p+1)} \frac{M R^{2(q-1)}  j_0^2 }{2}
-{}_2F_1(1/2, 1-q, 3/2, 1)
+&=& \frac{2\pi \rho_0  j_0^2 }{(2q-p+1)} R^{2q-p+1} {}_2F_1(1/2, 1-q, 3/2, 1) \\
+&=& \frac{(3-p)}{(2q-p+1)} \frac{M R^{2(q-1)}  j_0^2 }{2} {}_2F_1(1/2, 1-q, 3/2, 1)
 \end{eqnarray}
 
 The total gravitational energy is 
